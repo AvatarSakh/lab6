@@ -550,7 +550,7 @@ https://www.codewars.com/kata/run-length-encoding
 
 https://www.codewars.com/kata/walk-the-object-path
 
-![img6](/images/6.png)
+![img6](/images/7.png)
 
 <h4>Вывод: Укрепил знания в Node Js, JavaScript и вспомнил Markdown.</h4>
 
