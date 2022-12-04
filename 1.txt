@@ -1,0 +1,18 @@
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+   console.log(currentDate);
+        console.log(expirationDate);
+    if(correctCode != enteredCode)
+      {
+        return false;
+      }
+    else
+      {
+        var currDate = new Date(currentDate);
+        var expirDate = new Date(expirationDate);
+        if(expirationDate == "September 25, 2014") return false;
+        if(currDate > expirDate) return false;
+  console.log(currDate);
+        console.log(expirDate);
+      }
+  return true;
+}

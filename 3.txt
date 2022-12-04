@@ -1,0 +1,6 @@
+function handAngle (date) {
+  var hours = date.getMinutes() / 60;
+  let minutes = (date.getHours() + hours) / 12;
+  let angle = Math.abs(hours - minutes) * 2 * Math.PI;
+  return Math.min(angle, 2 * Math.PI - angle);
+}

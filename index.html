@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <style>
+        div{
+            margin-bottom: 10px;
+            width: 300px;
+        }
+        div p{
+            margin-bottom: 1px;
+        }
+        div button{
+            margin-top: 5px;
+        }
+        html, body{
+            height: 100%;
+        }
+        html{
+            display: table;
+            margin: auto;
+        }
+        body{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid;
+            padding: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        </style>
+    
+    <script src="./script.js"></script>
+    <script src="./jquery-3.6.1.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <p>Задание 1</p>
+        <label for="z1Input" class="form-label">Нажмите на кнопку</label>
+        <button type="button" class="btn btn-primary"  onclick="z1()">Считать</button>
+        <br>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 2</p>
+        <label for="z2Input" class="form-label">Нажмите на кнопку для изменения текста</label>
+        <input type="text" class="form-control" id="z2Input" value = "22222" disabled name="input1">
+        <button type="button" class="btn btn-primary"  onclick="z2(0)">Считать</button>
+        <br>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 3</p>
+        <label for="z3Input" class="form-label">Введите значение</label>
+        <input type="text" class="form-control" id="z3Input">
+        <button type="button" class="btn btn-primary"  onclick="z3(0)">Считать</button>
+        <br>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 4</p>
+        <label for="z4Input" class="form-label">Введите значение x</label>
+        <input type="text" class="form-control" id="z4Input">
+        <button type="button" class="btn btn-primary"  onclick="z4(0)">Считать</button>
+        <br>
+        <label class="form-label" id="z4Label">Ответ: </label>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 5</p>
+        <label for="z5Input" class="form-label">Введите значения</label>
+        <input type="text" class="form-control" id="z5Input1">
+        <input type="text" class="form-control" id="z5Input2">
+        <button type="button" class="btn btn-primary" onclick="z5()">Считать</button>
+        <br>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 6</p>
+        <button type="button" id ="z6" class="btn btn-primary" onclick="z6()">Нажмите</button>
+        <br>
+
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 7</p>
+        <label for="z7Input" class="form-label">Введите текст</label>
+        <input type="text" class="form-control" id="z7Input">
+        <button type="button" class="btn btn-primary" onclick="z7()">Считать</button>
+        <br>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 8</p>
+        <label for="z8Input" class="form-label">Нажмите кнопки</label>
+        <input type="text" class="form-control" id="z8Input">
+        <button type="button" class="btn btn-primary" onclick="z81()">Заблокировать</button>
+        <button type="button" class="btn btn-primary" onclick="z82()">Разблокировать</button>
+        <br>
+        <div id="tablez8"></div>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 9</p>
+        <label for="z9Input" class="form-label">Нажмите кнопку</label>
+        <button type="button" class="btn btn-primary" onmouseover="z9()">Считать</button>
+        <br>
+        <div id="tablez9"></div>
+        <hr>
+    </div>
+    
+    <div>
+        <p>Задание 10</p>
+
+        <button type="button" class="btn btn-primary" ondblclick="z10()">Нажать 2 раза</button>
+        <br>
+        <div id="tablez10"></div>
+        <hr>
+    </div>
+
+    <div>
+        <p>Задание 11</p>
+        <div style="height: 200px" onmouseover="z11()"></div>
+        <hr>
+    </div>
+    
+    <div>
+        <p>Задание 12</p>
+        <img id="img12" src="./1.png" style="height: 300px; width: 300px;">
+        <button type="button" class="btn btn-primary" onclick="z12()">Поменять картинку</button>
+        <hr>
+
+        <div>
+            <p>Задание 13</p>
+            <button type="button" class="btn btn-primary" onclick="z13(this)">Нажать</button>
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 14</p>
+            <label for="z14Input" class="form-label">Нажмите кнопку</label>
+            <input type="text" class="form-control" id="z14Input" onchange="z14(this)">
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 15</p>
+            <button type="button" class="btn btn-primary" onclick="z15(this)">Блокировать</button>
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 16</p>
+            <label for="z16Input" class="form-label">Нажмите кнопку</label>
+            <input type="text" class="form-control" id="z16Input">
+            <button type="button" class="btn btn-primary" onclick="z16()">Считать</button>
+            <br>
+            <label class="form-label" id="z16Label">Ответ: </label>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 17</p>
+            <label for="z17Input" class="form-label">Нажмите на кнопку</label>
+            <button type="button" class="btn btn-primary" onclick="z17()">Считать</button>
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 18</p>
+            
+            <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" onclick="z18()"/>
+            <div id="hide">Текст</div>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 19</p>
+            <button type="button" class="btn btn-primary" onclick="z19(this)">Нажмите</button>
+            <br>
+            <hr>
+        </div>
+
+        <div>
+            <p>Задание 20</p>
+            <label for="z20Input" class="form-label">Нажимайте на кнопку</label>
+            <input type="text" class="form-control" id="z20Input" disabled = "true">
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value = ``">C</button>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '1'">1</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '2'">2</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '3'">3</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '*'">*</button>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '4'">4</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '5'">5</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '6'">6</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '-'">-</button>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '7'">7</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '8'">8</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '9'">9</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '+'">+</button>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '00'">00</button>
+            <button type="button" class="btn btn-primary" onclick="document.getElementById(`z20Input`).value += '0'">0</button>
+            <button type="button" class="btn btn-primary" onclick="z20()">=</button>
+            <hr>
+        </div>
+
+</body>
+</html>

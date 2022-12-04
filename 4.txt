@@ -1,0 +1,29 @@
+function myLanguages(results) {
+  console.log(results);
+  var mas = [];
+  for(var key in results)
+    {
+      if(results[key]<60) delete results[key];
+      else
+        {
+          if(mas.length == 0) mas[0] = key;
+          else
+          for(var i = 0;i<mas.length;i++)
+            {
+              console.log(results[key]);
+              if(results[key]>results[mas[i]])
+                {
+                  mas.splice(i,0,key);
+                  break;
+                 }
+              else if(i+1 == mas.length)
+                {
+                  mas.push(key);
+                  break;
+                 }
+            }
+        }
+      console.log(results);
+    }
+  return mas
+}
